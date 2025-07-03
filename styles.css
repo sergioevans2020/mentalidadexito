@@ -1,115 +1,50 @@
-/* Reseteo básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Página motivacional inspirada por Ilia Topuria">
+  <title>Mentalidad de Éxito</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <h1>Mentalidad de Éxito</h1>
+    <nav>
+      <a href="#frases">Frases</a>
+      <a href="#about">Sobre Ilia</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #000;
-  color: #eee;
-  line-height: 1.6;
-}
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="overlay">
+      <h2>"Mentalidad de campeón, desde el primer entrenamiento"</h2>
+      <p>– Ilia Topuria</p>
+    </div>
+  </section>
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background: #111;
-}
+  <!-- Frases Motivacionales -->
+  <section id="frases">
+    <h2>Frases de Ilia Topuria</h2>
+    <blockquote>“The only one you need to achieve anything is yourself. Trust in yourself, have faith, and work tirelessly because everything will come.”</blockquote>
+    <blockquote>“A dream is not what you see in your sleep. A dream is what keeps you awake.”</blockquote>
+    <blockquote>“Cuando dejas de dudar y empiezas a actuar, te das cuenta: eres más fuerte que tus excusas.”</blockquote>
+    <blockquote>“No se trata solo de ganar. Se trata de construir una mentalidad imparable.”</blockquote>
+  </section>
 
-header h1 {
-  color: #e5b73b;
-}
+  <!-- Sobre Ilia -->
+  <section id="about">
+    <h2>Sobre Ilia</h2>
+    <p>Ilia Topuria, apodado "El Matador", es campeón de la UFC y símbolo de disciplina, foco mental y determinación. Con raíces georgianas y españolas, su camino refleja la lucha interna de un verdadero campeón.</p>
+  </section>
 
-nav a {
-  color: #ff0000;
-  margin-left: 1rem;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #e5b73b;
-}
-
-#hero {
-  position: relative;
-  height: 60vh;
-  background: url('images/ilia1.jpg') center/cover no-repeat;
-}
-
-#hero .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.6);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0 1rem;
-}
-
-#hero h2 {
-  font-size: 2rem;
-  color: #e5b73b;
-  margin-bottom: 0.5rem;
-}
-
-#hero p {
-  font-size: 1.2rem;
-  color: #ff0000;
-}
-
-section {
-  padding: 4rem 2rem;
-}
-
-#frases h2,
-#about h2 {
-  text-align: center;
-  color: #e5b73b;
-  margin-bottom: 2rem;
-}
-
-blockquote {
-  background: rgba(255, 0, 0, 0.1);
-  border-left: 5px solid #ff0000;
-  margin: 1rem auto;
-  padding: 1rem;
-  font-style: italic;
-  max-width: 800px;
-}
-
-#about p {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-footer {
-  background: #111;
-  text-align: center;
-  padding: 2rem;
-  color: #aaa;
-}
-
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-  }
-
-  nav {
-    margin-top: 0.5rem;
-  }
-
-  #hero h2 {
-    font-size: 1.5rem;
-  }
-}
+  <!-- Pie de Página -->
+  <footer id="contact">
+    <p>Sigue su camino en redes y mantén viva tu Mentalidad de Éxito.</p>
+    <p>© 2025 Mentalidad de Éxito — Página inspirada por la mentalidad de Ilia Topuria</p>
+  </footer>
+</body>
+</html>
