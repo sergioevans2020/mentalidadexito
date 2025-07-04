@@ -4,39 +4,80 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mentalidad de Éxito</title>
+
+  <!-- Enlace al CSS -->
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Fuente Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- AOS (Animaciones al hacer scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Mentalidad de Éxito</h1>
-    <nav>
-      <a href="#frases">Frases</a>
-      <a href="#about">Sobre Ilia</a>
-      <a href="#contact">Contacto</a>
-    </nav>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Mentalidad de Éxito</h1>
+      <nav class="nav">
+        <a href="#hero">Inicio</a>
+        <a href="#frases">Frases</a>
+        <a href="#valores">Valores</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="hero">
+  <section id="hero" class="hero-section" style="background-image: url('https://source.unsplash.com/1600x900/?motivation,sports');">
     <div class="overlay">
-      <h2>"Mentalidad de campeón, desde el primer entrenamiento"</h2>
-      <p>– Ilia Topuria</p>
+      <div class="hero-content" data-aos="fade-up">
+        <h2>"Mentalidad de campeón, desde el primer entrenamiento"</h2>
+        <p>– Inspirado por Ilia Topuria</p>
+        <a href="#frases" class="btn">Descubre más</a>
+      </div>
     </div>
   </section>
 
-  <section id="frases">
-    <h2>Frases de Ilia Topuria</h2>
-    <blockquote>“Confía en ti mismo y trabaja más que nadie. Ahí está la diferencia.”</blockquote>
-    <blockquote>“El dolor es temporal, la gloria es eterna.”</blockquote>
-    <blockquote>“No se trata solo de pelear, se trata de la mentalidad.”</blockquote>
+  <section id="frases" class="section frases">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-right">Frases Poderosas</h2>
+      <div class="quotes">
+        <blockquote data-aos="fade-up">“Confía en ti mismo y trabaja más que nadie. Ahí está la diferencia.”</blockquote>
+        <blockquote data-aos="fade-up" data-aos-delay="100">“El dolor es temporal, la gloria es eterna.”</blockquote>
+        <blockquote data-aos="fade-up" data-aos-delay="200">“No se trata solo de pelear, se trata de la mentalidad.”</blockquote>
+      </div>
+    </div>
   </section>
 
-  <section id="about">
-    <h2>Sobre Ilia</h2>
-    <p>Ilia Topuria, conocido como "El Matador", es un luchador de UFC que inspira a miles por su disciplina, motivación y mentalidad de acero.</p>
+  <section id="valores" class="section valores">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-left">Valores Fundamentales</h2>
+      <div class="valores-grid">
+        <div class="valor" data-aos="zoom-in">
+          <h3>Disciplina</h3>
+          <p>El compromiso diario con tus objetivos es lo que te separa del resto.</p>
+        </div>
+        <div class="valor" data-aos="zoom-in" data-aos-delay="100">
+          <h3>Enfoque</h3>
+          <p>Mantén tu mente fija en la meta, elimina distracciones.</p>
+        </div>
+        <div class="valor" data-aos="zoom-in" data-aos-delay="200">
+          <h3>Superación</h3>
+          <p>Cada caída es una oportunidad de levantarte más fuerte.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer id="contact">
-    <p>© 2025 Mentalidad de Éxito — Inspirado por Ilia Topuria</p>
+  <footer id="contacto" class="footer">
+    <div class="container">
+      <p>© 2025 Mentalidad de Éxito — Inspirado por Ilia Topuria</p>
+    </div>
   </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
