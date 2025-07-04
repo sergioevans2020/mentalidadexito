@@ -25,7 +25,6 @@ header {
 header h1 {
   color: #e5b73b;
   font-size: 1.8rem;
-  letter-spacing: 1px;
 }
 
 nav a {
@@ -33,18 +32,17 @@ nav a {
   margin-left: 1.5rem;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease;
 }
 
 nav a:hover {
   color: #e5b73b;
 }
 
-/* HERO SECTION */
+/* HERO CON IMAGEN SIN CARPETAS */
 #hero {
   position: relative;
   height: 70vh;
-  background: url('images/ilial.png') center/cover no-repeat;
+  background: url('ilial.png') center/cover no-repeat;
   background-attachment: fixed;
   display: flex;
   align-items: center;
@@ -52,15 +50,15 @@ nav a:hover {
 }
 
 #hero .overlay {
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
   text-align: center;
+  padding: 2rem;
 }
 
 #hero h2 {
@@ -73,7 +71,7 @@ nav a:hover {
 #hero p {
   font-size: 1.2rem;
   color: #ff0033;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 /* SECTIONS */
@@ -83,8 +81,7 @@ section {
   margin: 0 auto;
 }
 
-#frases h2,
-#about h2 {
+h2 {
   color: #e5b73b;
   text-align: center;
   margin-bottom: 2rem;
